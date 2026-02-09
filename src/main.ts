@@ -1,4 +1,5 @@
 import "./style.css";
+import { sendRentalInquiry } from "./email.ts";
 import { showRentalForm } from "./form.ts";
 import { applyTranslations, getLanguage, setLanguage } from "./i18n/i18n.ts";
 import { initMap } from "./map.ts";
@@ -18,8 +19,7 @@ function handleBackToDetails(caravan: Caravan) {
 }
 
 async function handleFormSubmit(data: RentalFormData) {
-  console.log("Form submitted:", data);
-  // EmailJS sending will be added in Task 9
+  await sendRentalInquiry(data);
 }
 
 function initLanguageToggle() {
