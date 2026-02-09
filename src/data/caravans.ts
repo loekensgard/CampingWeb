@@ -12,7 +12,7 @@ export const caravans: Caravan[] = [
     },
     features: ["2 persons", "WiFi", "Kitchen", "Shower"],
     price: { en: "450 NOK / night", no: "450 NOK / natt" },
-    images: ["/images/caravans/camper1.png"],
+    images: [`${import.meta.env.BASE_URL}images/caravans/camper1.png`],
     available: true,
   },
   {
@@ -26,7 +26,7 @@ export const caravans: Caravan[] = [
     },
     features: ["2 persons", "WiFi", "Kitchen", "Shower", "Pet friendly"],
     price: { en: "600 NOK / night", no: "600 NOK / natt" },
-    images: ["/images/caravans/camper2.jpg"],
+    images: [`${import.meta.env.BASE_URL}images/caravans/camper2.jpg`],
     available: false,
   },
 ];

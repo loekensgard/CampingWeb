@@ -1,4 +1,4 @@
-import "./style.css";
+import "../css/styles.css";
 import { sendRentalInquiry } from "./email.ts";
 import { showRentalForm } from "./form.ts";
 import { applyTranslations, getLanguage, setLanguage } from "./i18n/i18n.ts";
