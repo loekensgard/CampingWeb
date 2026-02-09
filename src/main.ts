@@ -1,16 +1,25 @@
 import "./style.css";
+import { showRentalForm } from "./form.ts";
 import { applyTranslations, getLanguage, setLanguage } from "./i18n/i18n.ts";
 import { initMap } from "./map.ts";
 import { initModal, openModal } from "./modal.ts";
-import type { Caravan } from "./types.ts";
+import type { Caravan, RentalFormData } from "./types.ts";
 
 function handleMarkerClick(caravan: Caravan) {
   openModal(caravan);
 }
 
 function handleRentClick(caravan: Caravan) {
-  console.log("Rent clicked:", caravan.id);
-  // Rental form will be added in Task 8
+  showRentalForm(caravan, handleFormSubmit, handleBackToDetails);
+}
+
+function handleBackToDetails(caravan: Caravan) {
+  openModal(caravan);
+}
+
+async function handleFormSubmit(data: RentalFormData) {
+  console.log("Form submitted:", data);
+  // EmailJS sending will be added in Task 9
 }
 
 function initLanguageToggle() {
