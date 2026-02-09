@@ -2,7 +2,7 @@ import type { Language } from "./types.ts";
 
 export const MAP_CONFIG = {
   center: { lat: 59.4255, lng: 11.343 } as const,
-  zoom: 12,
+  zoom: 13,
   tileUrl: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
   tileAttribution:
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
