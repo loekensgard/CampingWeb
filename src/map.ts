@@ -1,4 +1,5 @@
 import L from "leaflet";
+import "leaflet/dist/leaflet.css";
 import { MAP_CONFIG } from "./config.ts";
 import { caravans } from "./data/caravans.ts";
 import { tt } from "./i18n/i18n.ts";
