@@ -54,7 +54,7 @@ export function openModal(caravan: Caravan): void {
     </div>
     <div class="modal__price">
       <h3>${t("modal.price")}</h3>
-      <p>${caravan.price}</p>
+      <p>${tt(caravan.price)}</p>
     </div>
     ${rentButtonHtml}
   `;

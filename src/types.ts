@@ -10,7 +10,7 @@ export type Caravan = {
   address: string;
   description: TranslatableString;
   features: string[];
-  price: string;
+  price: TranslatableString;
   images: string[];
   available: boolean;
 };
